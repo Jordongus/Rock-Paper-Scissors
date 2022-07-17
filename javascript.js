@@ -1,4 +1,4 @@
-let  player = prompt('r, p, or s?');
+let  player = prompt('rock, paper, or scissors?');
 let computer = Math.floor(Math.random() * 3)+1;
 console.log(computer);
 
@@ -11,30 +11,30 @@ else if(computer === 2){
 else if(computer === 3){
     console.log('cpu throws scissors');
 }
-if(player === 'r' && computer === 1) {
+if(player.toUpperCase() === 'ROCK' && computer === 1) {
     console.log('tie');
 }
-else if(player === 'r' && computer === 2){
+else if(player.toUpperCase() === 'ROCK' && computer === 2){
     console.log('you lose');
 }
-else if(player  === 'r' && computer === 3){
+else if(player.toUpperCase()  === 'ROCK' && computer === 3){
     console.log('you win');
 }
-else if(player === 'p' && computer === 1){
+else if(player.toUpperCase() === 'PAPER' && computer === 1){
     console.log('you win');
 }
-else if(player === 'p' && computer === 2){
+else if(player.toUpperCase() === 'PAPER' && computer === 2){
     console.log('tie');
 }
-else if(player === 'p' && computer === 3){
+else if(player.toUpperCase() === 'PAPER' && computer === 3){
     console.log('you lose');
 }
-else if(player === 's' && computer === 1){
+else if(player.toUpperCase() === 'SCISSORS' && computer === 1){
     console.log('you lose');
 }
-else if(player === 's' && computer === 2){
+else if(player.toUpperCase() === 'SCISSORS' && computer === 2){
     console.log('you win');
 }
-else if(player === 's' && computer === 3){
+else if(player.toUpperCase() === 'SCISSORS' && computer === 3){
     console.log('you win');
 }
