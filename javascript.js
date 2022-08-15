@@ -2,6 +2,7 @@
 function getCPU(){
      return Math.floor(Math.random() * 3)+1;
 }
+// ^ gets random number between 1 and 3
 function computerRound(computer){
 if (computer === 1){
     return'cpu throws rock';
@@ -13,6 +14,7 @@ else if(computer === 3){
     return 'cpu throws scissors';
 }
 }
+//^assigns 123 to rock paper scissor
 function playerRound(player,computer){
 if (player === null){
     return 'dnf';
@@ -45,6 +47,7 @@ else if(player.toUpperCase() === 'SCISSORS' && computer === 3){
     return 'you win';
 }
 }
+//^Creates logic for the game
 let playerScore = 0;
 let computerScore = 0;
 for (let i =0; i < 5; i++){
@@ -61,6 +64,7 @@ for (let i =0; i < 5; i++){
        
 
 }
+//^plays the rounds of RPS
 function winner(playerScore, computerScore){
     if(playerScore > computerScore){
         return 'you win!!!'
@@ -72,6 +76,7 @@ function winner(playerScore, computerScore){
         return 'its a tie!!!'
     }
 }
+//^decides winner after 5 rounds
 function addition(player,computer){
     if (playerRound(player,computer) === 'you win'){
 return playerScore++;
@@ -80,3 +85,4 @@ return playerScore++;
 return computerScore++;
     }
 }
+//keeps track of the score
